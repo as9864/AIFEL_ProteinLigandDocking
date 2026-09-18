@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proteinanomaly"
+version = "0.1.0"
+description = "Data-loading utilities for DUD-E, LIT-PCBA, and a PDBbind-substitute (RCSB) real-binder reference set."
+requires-python = ">=3.10"
+dependencies = [
+    "rdkit>=2023.9",
+    "numpy",
+    "pandas",
+    "requests",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
